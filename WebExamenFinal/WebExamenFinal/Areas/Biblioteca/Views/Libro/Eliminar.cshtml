@@ -1,0 +1,88 @@
+﻿@model WebExamenFinal.Model.Libros
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Libros</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pub_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pub_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.avanzado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.avanzado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.realeza)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.realeza)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ytd_ventas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ytd_ventas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.notas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.notas)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

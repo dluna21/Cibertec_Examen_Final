@@ -19,6 +19,7 @@ namespace WebExamenFinal.Areas.Biblioteca.Controllers
             return View(_libros.ObtenerLista());
         }
 
+        [HttpGet]
         public ActionResult Crear() {
             return View(new Libros());
         }
@@ -44,7 +45,6 @@ namespace WebExamenFinal.Areas.Biblioteca.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [OutputCache(Duration = 0)]
         public ActionResult Actualizar(Libros libro)
         {
             if (!ModelState.IsValid) return View();

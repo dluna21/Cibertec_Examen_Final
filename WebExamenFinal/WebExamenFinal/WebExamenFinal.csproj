@@ -199,6 +199,10 @@
     <Content Include="Areas\Biblioteca\Views\Libro\Crear.cshtml" />
     <Content Include="Areas\Biblioteca\Views\Libro\Actualizar.cshtml" />
     <Content Include="Areas\Biblioteca\Views\Libro\Eliminar.cshtml" />
+    <Content Include="Areas\Biblioteca\Views\Autor\Index.cshtml" />
+    <Content Include="Areas\Biblioteca\Views\Autor\Crear.cshtml" />
+    <Content Include="Areas\Biblioteca\Views\Autor\Actualizar.cshtml" />
+    <Content Include="Areas\Biblioteca\Views\Autor\Eliminar.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -250,7 +254,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Biblioteca\Models\" />
     <Folder Include="Areas\Biblioteca\Views\AutorLibro\" />
-    <Folder Include="Areas\Biblioteca\Views\Autor\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

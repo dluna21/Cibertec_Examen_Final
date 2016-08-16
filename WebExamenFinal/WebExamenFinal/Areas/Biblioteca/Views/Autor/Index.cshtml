@@ -1,0 +1,81 @@
+﻿@model IEnumerable<WebExamenFinal.Model.Autores>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Crear")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.au_INombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.au_fNombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.au_telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.au_ciudad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.au_estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.au_zip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.au_sexo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.au_salario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.au_tema)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.au_INombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.au_fNombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.au_telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.au_ciudad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.au_estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.au_zip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.au_sexo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.au_salario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.au_tema)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Actualizar", new { id=item.au_id }) |
+            
+            @Html.ActionLink("Delete", "Eliminar", new { id=item.au_id })
+        </td>
+    </tr>
+}
+
+</table>
